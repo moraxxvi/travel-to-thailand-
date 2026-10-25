@@ -4,7 +4,7 @@ Landing page for a fictional Thailand tour agency, built from my own Figma desig
 
 ![Tropical Horizons — hero](img/preview.webp)
 
-**Live:** https://moraxxvi.github.io/travel-to-thailand/
+**Live:** https://moraxxvi.github.io/travel-to-thailand-/
 
 - Pure HTML / CSS / JS, no frameworks
 - Design tokens from the Figma style guide: Poppins + Nunito Sans + Fuggles, `#FF7A59` / `#252525` / `#FFCBB2`, 4px spacing scale, 150px edge margins
