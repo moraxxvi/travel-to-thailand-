@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tropical Horizons — Tours to Thailand</title>
+  <meta name="description" content="8-day guided tours across Thailand: Bangkok temples, Phi Phi islands, jungle lakes and Thai hospitality. Reserve your paradise.">
+  <meta name="theme-color" content="#252525">
+  <meta property="og:title" content="Tropical Horizons — Tours to Thailand">
+  <meta property="og:description" content="Explore the unforgettable beauty of Thailand. Your gateway to paradise awaits!">
+  <meta property="og:image" content="img/hero-1200.webp">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23FF7A59'/%3E%3Cpath d='M14 40c8-6 14-6 18 0s10 6 18 0' stroke='%23fff' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='24' r='7' fill='%23FFCBB2'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fuggles&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="img/hero.webp" imagesrcset="img/hero-1200.webp 1200w, img/hero.webp 2400w" imagesizes="100vw">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ШАПКА: логотип по центру, по две ссылки слева и справа (как в макете) -->
+  <header class="header" id="header">
+    <nav class="nav" aria-label="Main">
+      <a href="#home" class="nav__link">Home</a>
+      <a href="#program" class="nav__link">Tours</a>
+      <a href="#home" class="logo" aria-label="Tropical Horizons — home"><span>Tropical</span><span>Horizons</span></a>
+      <a href="#gallery" class="nav__link">Gallery</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <a href="#home">Home</a>
+    <a href="#program">Tours</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+    <a href="#reservation" class="btn btn--fill">Reserve Your Paradise!</a>
+  </div>
+
+  <main>
+
+    <!-- 1. HERO -->
+    <section class="hero" id="home">
+      <div class="hero__bg">
+        <img src="img/hero.webp" srcset="img/hero-1200.webp 1200w, img/hero.webp 2400w" sizes="100vw"
+             alt="Longtail boats on a beach between limestone cliffs in Krabi" fetchpriority="high">
+      </div>
+      <div class="hero__content">
+        <h1 class="hero__title">
+          <span class="line"><span>Explore the</span></span>
+          <span class="line"><span>Unforgettable Beauty of</span></span>
+          <span class="line"><span>Thailand</span></span>
+        </h1>
+        <p class="hero__sub">Your gateway to paradise awaits!</p>
+        <a href="#reservation" class="btn btn--light hero__btn">Reserve Your Paradise!<svg class="btn__arrow" viewBox="0 0 24 12" aria-hidden="true"><path d="M0 6h22M17 1l5 5-5 5"/></svg></a>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- 2. КАПСУЛЬНЫЕ БЛОКИ (фото чередуются справа/слева) -->
+    <section class="feature" id="about">
+      <div class="feature__text reveal">
+        <p class="eyebrow">About</p>
+        <h2>Discover The Magic Of Thailand!</h2>
+        <p>A journey to the Land of Smiles is more than just a vacation — it's a one-of-a-kind experience. From ancient temples to paradise beaches, Thailand has something for everyone.</p>
+      </div>
+      <figure class="capsule capsule--right reveal">
+        <img src="img/about.webp" srcset="img/about-900.webp 900w, img/about.webp 1600w" sizes="(max-width: 860px) 100vw, 50vw"
+             alt="Twin royal pagodas on Doi Inthanon mountain at sunset" loading="lazy">
+      </figure>
+    </section>
+
+    <section class="feature feature--flip">
+      <figure class="capsule capsule--left reveal">
+        <img src="img/transport.webp" srcset="img/transport-900.webp 900w, img/transport.webp 1600w" sizes="(max-width: 860px) 100vw, 50vw"
+             alt="Two tuk-tuks on a rainy neon-lit street in Bangkok's Chinatown" loading="lazy">
+      </figure>
+      <div class="feature__text reveal">
+        <p class="eyebrow">Transport</p>
+        <h2>Getting Around Thailand</h2>
+        <p>With easy access to tuk-tuks, scooters, and trains, exploring Thailand is effortless. Travel between cities, mountains, and islands with no stress!</p>
+      </div>
+    </section>
+
+    <section class="feature">
+      <div class="feature__text reveal">
+        <p class="eyebrow">Travel map</p>
+        <h2>Must-Visit Destinations</h2>
+        <ul class="dest">
+          <li><b>Bangkok</b> — a vibrant city full of life.</li>
+          <li><b>Phi Phi Islands</b> — crystal-clear waters and limestone cliffs.</li>
+          <li><b>Chiang Mai</b> — ancient temples and cultural charm.</li>
+          <li><b>Koh Samui</b> — luxurious resorts and breathtaking sunsets.</li>
+        </ul>
+      </div>
+      <figure class="capsule capsule--right reveal">
+        <img src="img/map.webp" srcset="img/map-900.webp 900w, img/map.webp 1600w" sizes="(max-width: 860px) 100vw, 50vw"
+             alt="Emerald lake among limestone mountains in Khao Sok" loading="lazy">
+      </figure>
+    </section>
+
+    <section class="feature feature--flip">
+      <figure class="capsule capsule--left reveal">
+        <img src="img/activities.webp" srcset="img/activities-900.webp 900w, img/activities.webp 1600w" sizes="(max-width: 860px) 100vw, 50vw"
+             alt="Floating raft houses on a jungle lake" loading="lazy">
+      </figure>
+      <div class="feature__text reveal">
+        <p class="eyebrow">Activities</p>
+        <h2>Things To Do In Thailand</h2>
+        <p>Adventure is everywhere in Thailand. Dive into the Andaman Sea, where coral reefs teem with marine life, or hike through misty jungles leading to hidden waterfalls. Experience the energy of full-moon beach parties, or immerse yourself in the rich traditions of local festivals.</p>
+      </div>
+    </section>
+
+    <section class="feature">
+      <div class="feature__text reveal">
+        <p class="eyebrow">Hospitality</p>
+        <h2>Where To Stay?</h2>
+        <p>Whether you seek a cozy beach bungalow or a high-rise luxury hotel, Thailand offers accommodation that fits every traveler's dream. Wake up to the sound of waves, enjoy breathtaking views, and experience the renowned Thai hospitality.</p>
+      </div>
+      <figure class="capsule capsule--right reveal">
+        <img src="img/stay.webp" srcset="img/stay-900.webp 900w, img/stay.webp 1600w" sizes="(max-width: 860px) 100vw, 50vw"
+             alt="Resort pool with sun loungers, thatched villas and karst mountains" loading="lazy">
+      </figure>
+    </section>
+
+    <!-- 3. ПРОГРАММА ТУРА: змейка 1→4, вниз, 5→8 справа налево -->
+    <section class="program" id="program">
+      <h2 class="section-title reveal">Your Perfect Vacation Program</h2>
+      <div class="route-wrap" id="route-wrap">
+      <!-- маршрут и лодочка рисуются в script.js по центрам кружков -->
+      <svg class="route" id="route" aria-hidden="true"><path class="route__track" /><path class="route__done" /></svg>
+      <div class="boat" id="boat" aria-hidden="true">
+        <svg viewBox="0 0 64 34"><g class="boat__bob">
+          <path class="boat__roof" d="M18 6h22v3H18z"/><path class="boat__pole" d="M21 9v8M37 9v8"/>
+          <path class="boat__hull" d="M2 20h48l10-14h3l-6 18c-1 3-4 5-8 5H12c-5 0-8-4-10-9z"/>
+          <path class="boat__stripe" d="M6 23h46"/><path class="boat__tail" d="M4 20L-6 30" />
+        </g></svg>
+      </div>
+      <ol class="snake" id="snake">
+        <li class="day" style="--i:0"><button type="button" data-day="0"><span class="day__num">1</span><span class="day__name">Welcome to Bangkok</span></button></li>
+        <li class="day" style="--i:1"><button type="button" data-day="1"><span class="day__num">2</span><span class="day__name">Temples and the Grand Palace</span></button></li>
+        <li class="day" style="--i:2"><button type="button" data-day="2"><span class="day__num">3</span><span class="day__name">Markets and Culinary Classes</span></button></li>
+        <li class="day" style="--i:3"><button type="button" data-day="3"><span class="day__num">4</span><span class="day__name">Transfer to Phi Phi Island</span></button></li>
+        <li class="day" style="--i:4"><button type="button" data-day="4"><span class="day__num">5</span><span class="day__name">Marine Adventures</span></button></li>
+        <li class="day" style="--i:5"><button type="button" data-day="5"><span class="day__num">6</span><span class="day__name">Spiritual Immersion</span></button></li>
+        <li class="day" style="--i:6"><button type="button" data-day="6"><span class="day__num">7</span><span class="day__name">Shopping and Leisure</span></button></li>
+        <li class="day" style="--i:7"><button type="button" data-day="7"><span class="day__num">8</span><span class="day__name">Return Home</span></button></li>
+      </ol>
+      </div>
+      <div class="day-card reveal" id="day-card" aria-live="polite">
+        <p class="day-card__label">Day <span id="day-card-num">1</span></p>
+        <h3 id="day-card-title">Welcome to Bangkok</h3>
+        <p id="day-card-text">Airport pick-up, check-in by the Chao Phraya river and a sunset dinner cruise past the illuminated temples.</p>
+      </div>
+    </section>
+
+    <!-- 4. БРОНИРОВАНИЕ -->
+    <section class="reservation" id="reservation">
+      <h2 class="section-title section-title--left reveal">Reservation</h2>
+      <div class="res-panel reveal">
+        <div class="res-list" id="res-list"><!-- строки рисует script.js из массива TOURS --></div>
+        <button class="res-more" id="res-more" type="button" aria-expanded="false" aria-label="Show more dates">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- 5. ОТЗЫВЫ -->
+    <section class="reviews" id="reviews">
+      <h2 class="section-title section-title--light reveal">Reviews</h2>
+      <div class="carousel reveal" id="carousel">
+        <button class="carousel__arrow carousel__arrow--prev" type="button" aria-label="Previous review"><svg viewBox="0 0 48 24" aria-hidden="true"><path d="M46 12H2M12 2L2 12l10 10"/></svg></button>
+        <div class="carousel__viewport">
+          <div class="carousel__track" id="track"><!-- карточки рисует script.js --></div>
+        </div>
+        <button class="carousel__arrow carousel__arrow--next" type="button" aria-label="Next review"><svg viewBox="0 0 48 24" aria-hidden="true"><path d="M2 12h44M36 2l10 10-10 10"/></svg></button>
+      </div>
+      <div class="dots" id="dots" role="tablist" aria-label="Choose review"></div>
+    </section>
+
+    <!-- 6. DISCOVER + ГАЛЕРЕЯ -->
+    <section class="discover" id="gallery">
+      <div class="discover__bg"><img src="img/discover.webp" srcset="img/discover-1000.webp 1000w, img/discover.webp 2000w" sizes="100vw" alt="" loading="lazy"></div>
+      <div class="discover__inner">
+        <div class="discover__text reveal">
+          <h2>Discover Thailand<br>in a new way</h2>
+          <button class="play" type="button" id="play-btn">
+            <span class="play__icon"><svg class="play__ring" viewBox="0 0 72 72" aria-hidden="true"><circle cx="36" cy="36" r="33"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+            <span>Watch the slideshow</span>
+          </button>
+          <p>From golden temples at dawn to lantern-lit nights in Chiang Mai — a glimpse of what the next eight days could feel like.</p>
+          <p class="discover__credit">©Tropical Horizons</p>
+        </div>
+        <div class="mosaic" id="mosaic">
+          <button class="tile reveal" style="--d:0" data-i="0"><img src="img/g-temple.webp" alt="Wat Arun temple on the Chao Phraya river" loading="lazy"></button>
+          <button class="tile reveal" style="--d:1" data-i="1"><img src="img/g-viewpoint.webp" alt="Phi Phi Don viewpoint over two bays" loading="lazy"></button>
+          <button class="tile reveal" style="--d:2" data-i="2"><img src="img/g-lanterns.webp" alt="Colourful paper lanterns in Chiang Mai" loading="lazy"></button>
+          <button class="tile reveal" style="--d:3" data-i="3"><img src="img/g-food.webp" alt="Street food stall with grilled skewers" loading="lazy"></button>
+          <button class="tile reveal" style="--d:4" data-i="4"><img src="img/g-market.webp" alt="Boats at a floating market" loading="lazy"></button>
+          <button class="tile reveal" style="--d:5" data-i="5"><img src="img/g-aerial.webp" alt="Aerial view of turquoise sea and small islands" loading="lazy"></button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 7. ФУТЕР -->
+  <footer class="footer" id="contact">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <h3>Need Help?</h3>
+        <p class="ico-line"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Sukhumvit Rd, Bangkok 10110, Thailand</p>
+        <p class="ico-line"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg><span>+66 2 000 0000<br>hello@tropical-horizons.example</span></p>
+      </div>
+      <div class="footer__col">
+        <h3>About</h3>
+        <a href="#about">About us</a>
+        <a href="#program">Tour program</a>
+        <a href="#reservation">Booking</a>
+      </div>
+      <div class="footer__col">
+        <h3>Social Media</h3>
+        <a href="#" class="ico-line"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8"/></svg>Instagram</a>
+        <a href="#" class="ico-line"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20"/></svg>X / Twitter</a>
+        <a href="#" class="ico-line"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 00-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg>Facebook</a>
+      </div>
+      <form class="footer__col subscribe" id="subscribe" novalidate>
+        <h3>Stay informed</h3>
+        <label class="sr-only" for="email">Your email</label>
+        <div class="subscribe__field">
+          <input id="email" type="email" placeholder="My email" autocomplete="email" required>
+          <button type="submit" aria-label="Subscribe"><svg viewBox="0 0 24 12" aria-hidden="true"><path d="M0 6h22M17 1l5 5-5 5"/></svg></button>
+        </div>
+        <p class="subscribe__msg" id="subscribe-msg" aria-live="polite"></p>
+      </form>
+    </div>
+    <!-- ЗАКАТ: при наведении на футер солнце садится за горизонт -->
+    <div class="sunset" id="sunset" aria-hidden="true">
+      <svg viewBox="0 0 1440 300" preserveAspectRatio="xMidYMax slice">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#252525"/><stop offset=".35" stop-color="#5a3433"/>
+            <stop offset=".72" stop-color="#FF7A59"/><stop offset="1" stop-color="#FFCBB2"/>
+          </linearGradient>
+          <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#4a2f2c"/><stop offset="1" stop-color="#252525"/>
+          </linearGradient>
+          <radialGradient id="sun"><stop offset="0" stop-color="#FFF1E8"/><stop offset=".6" stop-color="#FFCBB2"/><stop offset="1" stop-color="#FF9B7D"/></radialGradient>
+          <clipPath id="above"><rect width="1440" height="212"/></clipPath>
+        </defs>
+        <rect width="1440" height="212" fill="url(#sky)"/>
+        <rect class="sunset__night" width="1440" height="212" fill="#151515"/>
+        <g class="sunset__stars" fill="#FFF">
+          <circle cx="180" cy="30" r="1.6"/><circle cx="420" cy="58" r="1.2"/><circle cx="610" cy="22" r="1.5"/><circle cx="830" cy="48" r="1.1"/>
+          <circle cx="1010" cy="18" r="1.7"/><circle cx="1220" cy="44" r="1.3"/><circle cx="1350" cy="20" r="1.1"/><circle cx="300" cy="90" r="1"/>
+        </g>
+        <g clip-path="url(#above)"><circle class="sunset__sun" cx="720" cy="150" r="74" fill="url(#sun)"/></g>
+        <rect y="211" width="1440" height="89" fill="url(#sea)"/>
+        <g class="sunset__glare" stroke="#FFCBB2" stroke-linecap="round">
+          <path d="M650 224h140" stroke-width="4"/><path d="M675 238h90" stroke-width="3"/><path d="M695 252h50" stroke-width="3"/><path d="M708 266h24" stroke-width="2"/>
+        </g>
+        <path fill="#3d2b2a" d="M960 212c18-56 38-92 68-100 22-5 32 36 42 52 15-40 40-70 70-66 30 4 36 74 50 114z"/>
+        <path fill="#3d2b2a" d="M870 212c8-20 20-36 36-36s22 20 32 36z"/>
+        <path fill="#1c1a1a" d="M0 212V88c30-20 62-28 82-8s16 60 40 70c20-30 50-92 90-96 40-3 52 66 60 106 10 25 30 40 60 52z"/>
+        <path fill="#1c1a1a" d="M1250 212c10-52 30-112 62-132 30-18 62-4 76 30 10-20 32-30 52-25V212z"/>
+        <g class="sunset__boat" fill="#161414">
+          <path d="M440 236h118l20-26h6l-12 32c-2 5-7 8-13 8H462c-10 0-16-6-22-14z"/>
+          <path d="M470 222h46v5h-46z"/><path d="M476 227v9M510 227v9" stroke="#161414" stroke-width="3"/>
+          <path d="M444 236l-22 18" stroke="#161414" stroke-width="3"/>
+        </g>
+        <text class="sunset__text" x="720" y="104" text-anchor="middle">See you on the horizon</text>
+      </svg>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Tropical Horizons — demo project</span>
+      <span>Design &amp; code — <a href="https://moraxxvi.github.io" target="_blank" rel="noopener">Mansur</a> · Photos — <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></span>
+      <a href="#home" class="to-top">↑ Back to top</a>
+    </div>
+  </footer>
+
+  <!-- МОДАЛКА БРОНИРОВАНИЯ -->
+  <dialog class="modal" id="book-modal" aria-labelledby="book-title">
+    <form method="dialog" class="modal__inner" id="book-form" novalidate>
+      <button class="modal__close" value="cancel" aria-label="Close">×</button>
+      <p class="eyebrow">Booking</p>
+      <h3 id="book-title">Reserve your tour</h3>
+      <p class="modal__tour" id="book-tour"></p>
+      <label>Full name<input name="name" required autocomplete="name" placeholder="Isabella Rossi"></label>
+      <label>Email<input name="email" type="email" required autocomplete="email" placeholder="you@email.com"></label>
+      <label>Travelers
+        <span class="stepper"><button type="button" data-step="-1" aria-label="Fewer travelers">−</button><output id="guests">1</output><button type="button" data-step="1" aria-label="More travelers">+</button></span>
+      </label>
+      <p class="form-error" id="book-error" aria-live="polite"></p>
+      <button class="btn btn--fill" id="book-submit" value="default">Confirm booking<svg class="btn__arrow" viewBox="0 0 24 12" aria-hidden="true"><path d="M0 6h22M17 1l5 5-5 5"/></svg></button>
+      <p class="modal__note">This is a demo — no real booking is made.</p>
+    </form>
+  </dialog>
+
+  <!-- ЛАЙТБОКС ГАЛЕРЕИ / СЛАЙДШОУ -->
+  <dialog class="lightbox" id="lightbox" aria-label="Gallery">
+    <button class="lightbox__close" aria-label="Close">×</button>
+    <button class="lightbox__nav lightbox__nav--prev" aria-label="Previous photo"><svg viewBox="0 0 48 24" aria-hidden="true"><path d="M46 12H2M12 2L2 12l10 10"/></svg></button>
+    <figure class="lightbox__fig"><img id="lb-img" alt=""><figcaption id="lb-cap"></figcaption></figure>
+    <button class="lightbox__nav lightbox__nav--next" aria-label="Next photo"><svg viewBox="0 0 48 24" aria-hidden="true"><path d="M2 12h44M36 2l10 10-10 10"/></svg></button>
+    <div class="lightbox__bar"><span id="lb-progress"></span></div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
