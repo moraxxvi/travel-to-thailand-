@@ -39,7 +39,7 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; overflow-x: clip; }
 body {
   margin: 0;
   font: 400 16px/1.5 var(--f-body);
@@ -47,6 +47,7 @@ body {
   background: var(--white);
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  overflow-x: clip; /* hidden не держит ширину на мобильных, clip держит */
 }
 img { display: block; max-width: 100%; }
 a { color: inherit; }
@@ -629,7 +630,7 @@ dialog { border: 0; padding: 0; }
   .hero__btn { padding: 14px 28px; }
 
   /* капсулы: фото сверху во всю ширину, текст ниже */
-  .feature, .feature--flip { grid-template-columns: 1fr; gap: var(--s5); padding-block: var(--s6); }
+  .feature, .feature--flip { grid-template-columns: 1fr; gap: var(--s5); padding-block: var(--s6); overflow-x: clip; }
   .feature .capsule { order: -1; height: clamp(190px, 52vw, 320px); width: calc(100% - 24px); }
   .feature .capsule--right { margin-left: auto; }
   .feature__text, .feature--flip .feature__text { padding: 0 var(--edge); max-width: none; }
